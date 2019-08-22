@@ -1,0 +1,28 @@
+body {
+    background: url(../images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.container {
+
+}
+
+#title {
+   
+}
+
+h1 {
+    font-family: 'Cabin', sans-serif;
+    font-size: 100px;
+    color: rgb(54, 224, 247);
+    float:left;
+    margin-left: 200px;
+    margin-right:35px;
+}
+
+h2 {
+    font-family: 'Pacifico', cursive;
+    font-size: 150px;
+    color: red;
+}
