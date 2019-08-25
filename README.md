@@ -33,8 +33,13 @@ Remember: global variables, then objects, then calls.
 
 Definitely talk with a TA or your instructor if you get tripped up during this challenge.
 
+nameOfGame
 GUESS THAT PUPPY
+
+possibleSounds
+win
 WHO LET THE DOGS OUT!
+lose
 DUCK HUNT?
 
 1. Labrador Retriever
