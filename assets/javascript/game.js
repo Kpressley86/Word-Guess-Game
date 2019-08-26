@@ -2,13 +2,6 @@
 // var name = prompt("What is your name?");
 // console.log("Hello" + name);
 
-// FUNCTIONS //
-
-
-function userGuess () {
-
-}
-
 function displayGuess () {
 
 }
@@ -17,10 +10,6 @@ function reset() {
 
 }
 
-// picking a random dog//
-// function getRandomPuppy() {
-//   return puppyArray[Math.floor(Math.random()*puppyArray.length)];
-// }
 
 // Array of dog names //
 
@@ -32,6 +21,9 @@ let puppyArray = [ "labrador retriever", "german shepherd", "poodle", "chihuahua
 "shetland sheepdog", "dobermann", "chesapeake bay retriever", "bernese mountain", 
 "great dane", "rhodesian ridgeback", "siberian husky", "australian shepherd", "corgi", 
 "boston terrier", "pomeranian", "havanese", "english mastiff" ];
+console.log (puppyArray)
+
+// picking a random dog//
 
 let randomPuppy = puppyArray[Math.floor(Math.random()*puppyArray.length)];
 
@@ -39,6 +31,11 @@ document.body.innerHTML = randomPuppy;
 
 console.log(randomPuppy);
 
+// Getting the users GUESS! //
+
+function userGuess () {
+document.getElementById("userGuess")
+}
 
 // Array for each name!//
 // var answerArray = ["_","_"];
@@ -78,7 +75,7 @@ console.log(randomPuppy);
 
  // Console loggs //
 
-console.log (puppyArray)
+
 
 // This is a LOOP //
 // for (var i= 0; 1 < puppyArray.length; i++) //
