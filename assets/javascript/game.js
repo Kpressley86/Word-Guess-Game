@@ -19,17 +19,19 @@ console.log(puppyArray)
 
 let randomPuppy = puppyArray[Math.floor(Math.random() * puppyArray.length)];
 
-document.body.innerHTML = randomPuppy;
+ //document.guess.innerHTML = randomPuppy;
 
 console.log(randomPuppy);
 
 
-// answer to randomPuppy? //
+// display answerArray to randomPuppy //
 
 var answerArray = [];
 for (var i = 0; i < randomPuppy.length; i++) {
   answerArray[i] = "_";
 }
+console.log(answerArray);
+
 var remainingLetters = randomPuppy.length;
 while (remainingLetters > 0)
   for (var j = 0; j < randomPuppy.length; j++) {
@@ -38,10 +40,11 @@ while (remainingLetters > 0)
       remainingLetters--;
     }
   }
+  console.log(remainingLetters);
 
 // userGuess //
 function userGuess() {
-  var guess = document.getElementById("guess").value;
+  var guess = document.getElementById(onkeyup).value;
 
 
   if (guess === userGuess) {}
