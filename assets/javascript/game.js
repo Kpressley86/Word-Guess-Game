@@ -2,14 +2,6 @@
 // var name = prompt("What is your name?");
 // console.log("Hello" + name);
 
-function displayGuess() {
-
-}
-
-function reset() {
-
-}
-
 
 // Array of dog names //
 
@@ -47,7 +39,22 @@ while (remainingLetters > 0)
     }
   }
 
-  // userGuess //
-  function userGuess() {
-    document.getElementById("guess").value;
-  }
+// userGuess //
+function userGuess() {
+  var guess = document.getElementById("guess").value;
+
+
+  if (guess === userGuess) {}
+}
+
+function displayGuess() {
+
+}
+
+function reset() {
+
+}
+
+// Array of images? not sure if possible yet//
+
+// var imageArray = [?]
