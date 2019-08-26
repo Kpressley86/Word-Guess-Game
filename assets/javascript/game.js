@@ -37,43 +37,7 @@ function userGuess () {
 document.getElementById("userGuess")
 }
 
-// Array for each name!//
-// var answerArray = ["_","_"];
-// u for (var i = 0; i < puppyArray.length; i++) {
-//  answerArray[i] = "_";
-// }
-// var remainingLetters = puppyArray.length;
 
-
-// Array of images? not sure if possible yet//
-
-// var imageArray = [?]
-
-// If Else Example //
-
-// if (true) {
-//     alert("goo goo dolls");
-//   }
-//   else {
-//     alert("vanilla ice");
-//   }
-
-//   if (false) {
-//     alert("the neighborhood");
-//   }
-//   else {
-//     alert("one direction");
-//   }
-
-//   if (("5" + "5") === "55") {
-//     alert("tofu");
-//   }
-//   else {
-//     alert("soybean");
-//   }
-
-
- // Console loggs //
 
 
 
