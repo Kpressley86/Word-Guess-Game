@@ -1,12 +1,12 @@
 body {
-    background-image: url("../images/background.jpg");
+    background-image: url("../images/ball.gif");
     background-repeat: no-repeat;
     background-size: 100%;
 }
 
 h1 {
     font-size: 43px;
-    border: solid 5px red;
+    border: solid 5px rgb(101, 196, 240)(187, 0, 0);
     background: white;
     text-align: center;
     margin-top: 2%;
@@ -31,15 +31,15 @@ img {
 .sidebar {
     padding: 5px;
     position: relative;
-    border-top: solid red 2px;
-    border-bottom: solid red 2px;
+    border-top: solid rgb(71, 241, 247) 2px;
+    border-bottom: solid rgb(74, 219, 230) 2px;
     margin-bottom: 5px;
     font-family: 'Press Start 2P', cursive;
     font-size: 12px;
 }
 
 span {
-    border: solid red 2px;
+    border: solid rgb(71, 228, 240) 2px;
     padding-left: 3px;
     padding-right:3px;
     background-color: yellow; 
@@ -48,7 +48,7 @@ span {
 
 .background {
     background-image: url("../images/backsplash.jpg");
-    border: solid 5px red;
+    border: solid 5px rgb(91, 235, 235);
 }
 
 .container {
@@ -58,7 +58,7 @@ span {
     margin-right: 20%;
     margin-bottom: 5px;
     text-align: center;
-    border: solid 3px red;
+    border: solid 3px rgb(94, 228, 238);
 }
 
 #currentword {
