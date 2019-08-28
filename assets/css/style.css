@@ -1,7 +1,9 @@
 body {
-    background-image: url("../images/ball.gif");
+    background-image: url("../images/duckHunt.gif");
     background-repeat: no-repeat;
     background-size: 100%;
+    max-width: 1920px;
+    max-height: 1080px;
 }
 
 h1 {
@@ -47,12 +49,12 @@ span {
 }
 
 .background {
-    background-image: url("../images/backsplash.jpg");
+    
     border: solid 5px rgb(91, 235, 235);
 }
 
 .container {
-    background-color: white;
+  
     margin-top: 5px;
     margin-left: 20%;
     margin-right: 20%;

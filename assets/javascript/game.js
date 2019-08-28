@@ -52,8 +52,8 @@ function Game() {
 
 
 //variables for audio function
-let gold = document.getElementById("golden retiever");
-let chi = document.getElementById("chihuahua");
+let goldenRetriever = document.getElementById("golden retiever");
+let chihuahua = document.getElementById("chihuahua");
 let poodle = document.getElementById("poodle");
 let beagle = document.getElementById("beagle");
 let bullb = document.getElementById("bulldog");
