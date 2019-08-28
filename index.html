@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <meta charset="UTF-8">
@@ -9,39 +9,110 @@
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <title>Word-Guess-Game</title>
     <link href="https://fonts.googleapis.com/css?family=Bevan|Roboto|Roboto+Condensed&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css?family=Faster+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
 </head>
 
 <body>
-    <h1><span class="l">Name</span><span class="o">that</span>
-        <span class="v">Puppy</span><span class="e"></span></h1>
-
-    <div class="container">
-
-        <h1>
-            <input type="text" id="guess" onkeyup="checkUserGuess();" placeholder="radomPuppy">
-
-        </h1>
-
-        <div class="container">
-                <h1>World Cities Word Guess Game</h1>
-                <p>Press any key to get started!</p>
-        
-                <!-- When user presses any key, start game -->
-                <h4>Wins</h4>
-                <div id="totalWins"></div>
-                <h4>Current Word</h4>
-                <div id="currentWord"></div>
-                <h4>Guesses Remaining</h4>
-                <div id="remainingGuesses"></div>
-                <h4>Letters Guessed</h4>
-                <div id="guessedLetters"></div>
-        
-            </div>
-        
+    <!--Main Heading-->
+    <div class="heading">
+        <h1>Name That PUPPY!</h1>
     </div>
 
+    <div class="background">
+        <div class="container">
+
+            <!--Changing Image based on correct answers-->
+            <h2>START - Press Any Letter Key!</h2>
+            <div>
+                <img id="image" src="./assets/images/duckHunt.gif" width="40%" height="200">
+            </div>
+
+            <!--Current Word Container-->
+            <div>
+                <h3 id="currentword">_ _ _ _ _</h3>
+            </div>
+            <div id="scoreboard">
+                <!--Guesses left Container-->
+                <div class="sidebar">
+                    <h3>GUESSES LEFT:
+                        <span id="guessesremaining"></span>
+                    </h3>
+                </div>
+
+                <!--Wins counter Container-->
+                <div class="sidebar">
+                    <h3>WINS:
+                        <span id="winstracker"></span>
+                    </h3>
+                </div>
+                <!--Loss counter Container-->
+                <div class="sidebar">
+                    <h3>LOSSES:
+                        <span id="losstracker"></span>
+                    </h3>
+                </div>
+
+                <!--Wrong guesses container-->
+                <div class="sidebar">
+                    <h3>LETTERS YOU GUESSED WRONG:
+                        <span id="playerguesses"></span>
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div>
+        
+        <audio id="golden">
+            <source src="./assets/audio/99 - Bark! (SFX).mp3" type="audio/mp3">
+        </audio>
+        
+        <audio id="poodle">
+            <source src="./assets/audio/99 - Bark! (SFX).mp3" type="audio/mp3">
+        </audio>
+        
+        <audio id="chi">
+            <source src="./assets/audio/99 - Bark! (SFX).mp3" type="audio/mp3">
+        </audio>
+        
+        <audio id="bull">
+            <source src="./assets/audio/99 - Bark! (SFX).mp3" type="audio/mp3">
+        </audio>
+        
+        <audio id="beagle">
+            <source src="./assets/audio/99 - Bark! (SFX).mp3" type="audio/mp3">
+        </audio>
+        
+        <audio id="mal">
+            <source src="./assets/audio/99 - Bark! (SFX).mp3" type="audio/mp3">
+        </audio>
+        
+        <audio id="basset">
+            <source src="./assets/audio/99 - Bark! (SFX).mp3" type="audio/mp3">
+        </audio>
+
+        
+        <audio id="york">
+            <source src="./assets/audio/99 - Bark! (SFX).mp3" type="audio/mp3">
+        </audio>
+       
+        <audio id="dach">
+            <source src="./assets/audio/99 - Bark! (SFX).mp3" type="audio/mp3">
+        </audio>
+        
+        <audio id="germ">
+            <source src="./assets/audio/99 - Bark! (SFX).mp3" type="audio/mp3">
+        </audio>
+    </div>
+
+
+
+
     <script src="./assets/javascript/game.js"></script>
+
 </body>
 
 </html>

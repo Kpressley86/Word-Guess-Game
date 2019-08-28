@@ -27,23 +27,21 @@ function Game() {
     
     randomPuppy = puppyArray[Math.floor(Math.random() * puppyArray.length)];
 
-    
     lettersOfWord = randomPuppy.split("");
 
-    //store length of word in blanks, for later use
     blanks = lettersOfWord.length;
 
-    //creating a loop to generate "_" for each letter in array stored in blanks
+    // loop for "_" spaces //
     for (var i = 0; i < blanks; i++) {
         blanksAndCorrect.push("_");
     }
 
-    //showing the "_" within HTML
+    //showing the "_" within HTML //
     document.getElementById("currentword").innerHTML = "  " + blanksAndCorrect.join("  ");
 
-    //console logging 
+    // console loggs //
     console.log(puppyArray)
-    console.log(randomPuppy);
+    console.log(randomPuppy)
     console.log(lettersOfWord)
     console.log(blanks)
     console.log(blanksAndCorrect)
@@ -54,16 +52,16 @@ function Game() {
 
 
 //variables for audio function
-let a = document.getElementById("golden retiever");
-let r = document.getElementById("chihuahua");
-let simpsons = document.getElementById("poodle");
-let scoobydoo = document.getElementById("beagle");
-let spongebob = document.getElementById("bulldog");
-let danny = document.getElementById("maltese");
-let teent = document.getElementById("basset hound");
-let teent = document.getElementById("yorkie");
-let teent = document.getElementById("dachshund");
-let teent = document.getElementById("german shepherd");
+let gold = document.getElementById("golden retiever");
+let chi = document.getElementById("chihuahua");
+let poodle = document.getElementById("poodle");
+let beagle = document.getElementById("beagle");
+let bullb = document.getElementById("bulldog");
+let mal = document.getElementById("maltese");
+let bassett = document.getElementById("basset hound");
+let york = document.getElementById("yorkie");
+let dach = document.getElementById("dachshund");
+let germ = document.getElementById("german shepherd");
 
 
 function aud() {
