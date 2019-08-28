@@ -2,7 +2,15 @@
 
 nameOfGame
 
-GUESS THAT PUPPY
+--GUESS THAT PUPPY--
+
+-Type and letter key to star
+
+-10 guesses unless you guess correct then count remains
+
+-If you guess wrong then remaining guesses go down by 1 and the letters are displayed at the bottom.
+
+-When corectly guessing the "PUPPY" it will display that puppys picture and reset to a new word
 
 1. Labrador Retriever
 2. German Shepherd
