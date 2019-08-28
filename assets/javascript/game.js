@@ -52,167 +52,70 @@ function Game() {
 
 
 //variables for audio function
-let goldenRetriever = document.getElementById("golden retiever");
-let chihuahua = document.getElementById("chihuahua");
-let poodle = document.getElementById("poodle");
-let beagle = document.getElementById("beagle");
-let bullb = document.getElementById("bulldog");
-let mal = document.getElementById("maltese");
-let bassett = document.getElementById("basset hound");
-let york = document.getElementById("yorkie");
-let dach = document.getElementById("dachshund");
-let germ = document.getElementById("german shepherd");
+let correctGuess = document.getElementById("correct");
+let wrongGuess = document.getElementById("wrong");
+
 
 
 function aud() {
     // goldenRetriever //
     
     if (randomPuppy === puppyArray[0]) {
-        chihuahua.pause();
-        poodle.pause();
-        beagle.pause();
-        bulldog.pause();
-        maltese.pause();
-        "basset hound".pause();
-        yorkie.pause();
-        dachshund.pause();
-        "german shepherd".pause();
-        "golden retriever".play();
+    
         document.getElementById("image").src = "./assets/images/golden.jpg";
     }
     // chihuahua //
     
     else if (randomPuppy === puppyArray[1]) {
-        "golden retriever".pause();
-        poodle.pause();
-        beagle.pause();
-        bulldog.pause();
-        maltese.pause();
-        "basset hound".pause();
-        yorkie.pause();
-        dachshund.pause();
-        "german shepherd".pause();
-        chihuahua.play();
+      
         document.getElementById("image").src = "./assets/images/chihuahua.jpg";
     }
     // poodle //
     
     else if (randomPuppy === puppyArray[2]) {
-        chihuahua.pause();
-        "golden retriever".pause();
-        beagle.pause();
-        bulldog.pause();
-        maltese.pause();
-        "basset hound".pause();
-        yorkie.pause();
-        dachshund.pause();
-        "german shepherd".pause();
-        poodle.play();
+        
         document.getElementById("image").src = "./assets/images/poodle.jpg";
     }
     // beagle //
     
     else if (randomPuppy === puppyArray[3]) {
-        chihuahua.pause();
-        poodle.pause();
-        "golden retriever".pause();
-        bulldog.pause();
-        maltese.pause();
-        "basset hound".pause();
-        yorkie.pause();
-        dachshund.pause();
-        "german shepherd".pause();
-        beagle.play();
+       
         document.getElementById("image").src = "./assets/images/beagle.jpg";
     }
     // bulldog //
    
     else if (randomPuppy === puppyArray[4]) {
-        chihuahua.pause();
-        poodle.pause();
-        beagle.pause();
-        "golden retriever".pause();
-        maltese.pause();
-        "basset hound".pause();
-        yorkie.pause();
-        dachshund.pause();
-        "german shepherd".pause();
-        bulldog.play();
+        
         document.getElementById("image").src = "./assets/images/bulldog.jpg";
     }
     // maltese //
     
     else if (randomPuppy === puppyArray[5]) {
-        chihuahua.pause();
-        poodle.pause();
-        beagle.pause();
-        bulldog.pause();
-        "golden retriever".pause();
-        "basset hound".pause();
-        yorkie.pause();
-        dachshund.pause();
-        "german shepherd".pause();
-        maltese.play();
+        
         document.getElementById("image").src = "./assets/images/maltese.jpg";
     }
     // basset hound //
     
     else if (randomPuppy === puppyArray[6]) {
-        chihuahua.pause();
-        poodle.pause();
-        beagle.pause();
-        bulldog.pause();
-        maltese.pause();
-        "golden retriever".pause();
-        yorkie.pause();
-        dachshund.pause();
-        "german shepherd".pause();
-        "basset hound".play();
+       
         document.getElementById("image").src = "./assets/images/basset-hound.jpg";
     }
     // yorkie //
 
     else if (randomPuppy === puppyArray[7]) {
-        chihuahua.pause();
-        poodle.pause();
-        beagle.pause();
-        bulldog.pause();
-        maltese.pause();
-        "basset hound".pause();
-        "golden retriever".pause();
-        dachshund.pause();
-        "german shepherd".pause();
-        yorkie.play();
+       
         document.getElementById("image").src = "./assets/images/yorkie.jpg";
     }
     // dachshund //
 
     else if (randomPuppy === puppyArray[8]) {
-        chihuahua.pause();
-        poodle.pause();
-        beagle.pause();
-        bulldog.pause();
-        maltese.pause();
-        "basset hound".pause();
-        yorkie.pause();
-        "golden retriever".pause();
-        "german shepherd".pause();
-        dachshund.play();
+      
         document.getElementById("image").src = "./assets/images/dachshund.jpg";
     }
     // german shepherd //
 
     else if (randomPuppy === puppyArray[9]) {
-        chihuahua.pause();
-        poodle.pause();
-        beagle.pause();
-        bulldog.pause();
-        maltese.pause();
-        "basset hound".pause();
-        yorkie.pause();
-        dachshund.pause();
-        "golden retriever".pause();
-        "german shepherd".play();
+       
         document.getElementById("image").src = "./assets/images/germ-shep.jpg";
     }
 };
