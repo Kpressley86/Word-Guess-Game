@@ -6,6 +6,11 @@ body {
     max-height: 1080px;
 }
 
+.navbar-text {
+    margin-left: 40%;
+    font-weight: 900;
+}
+
 .head {
     margin-top: 30px;
     margin-left: 10%;
@@ -115,6 +120,7 @@ span {
     top: 15px;
   }
   .b2 {
+      font-size: 45%;
     position: absolute;
     left: 15px;
     top: 0;

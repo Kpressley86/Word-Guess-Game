@@ -10,13 +10,23 @@
     <title>Word-Guess-Game</title>
     <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 
 <body>
-    <!--Main Heading-->
-    <div class="heading">
-        <h1>Name That PUPPY!</h1>
-    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="https://kpressley86.github.io/">Kelly Pressley</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarText">
+    
+    <span class="navbar-text">
+      Name That PUPPY!
+    </span>
+  </div>
+</nav>
 
     <div class="background">
         <div class="container">
@@ -37,32 +47,30 @@
                 <img id="image" src="./assets/images/golden.jpg" width="40%" height="200">
             </div>
 
-            <!--Current Word Container-->
+          
             <div>
                 <h3 id="currentword">_ _ _ _ _</h3>
             </div>
             <div id="scoreboard">
-                <!--Guesses left Container-->
-                <div class="sidebar">
-                    <h3>REMAINING GUESSES:
-                        <span id="guessesremaining"></span>
-                    </h3>
-                </div>
-
-                <!--Wins counter Container-->
+                
                 <div class="sidebar">
                     <h3>WINS:
                         <span id="winstracker"></span>
                     </h3>
                 </div>
-                <!--Loss counter Container-->
+              
                 <div class="sidebar">
                     <h3>LOSSES:
                         <span id="losstracker"></span>
                     </h3>
                 </div>
 
-                <!--Wrong guesses container-->
+                <div class="sidebar">
+                        <h3>REMAINING GUESSES:
+                            <span id="guessesremaining"></span>
+                        </h3>
+                    </div>
+                
                 <div class="sidebar">
                     <h3>WRONG LETTERS GUESSED:
                         <span id="playerguesses"></span>
