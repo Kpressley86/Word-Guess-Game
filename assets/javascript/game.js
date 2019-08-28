@@ -52,8 +52,8 @@ function Game() {
 
 
 //variables for audio function
-let correctGuess = document.getElementById("correct");
-let wrongGuess = document.getElementById("wrong");
+let correctG = document.getElementById("correct");
+let wrongG = document.getElementById("wrong");
 
 
 
