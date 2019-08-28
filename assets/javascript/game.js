@@ -1,7 +1,7 @@
 // Array of dog names //
 
-let puppyArray = ["golden retriever", "poodle", "chihuahua", "bulldog", "beagle",
-  "maltese", "basset hound","yorkie", "dachshund", "german shepherd"];
+let puppyArray = ["golden_retriever", "poodle", "chihuahua", "bulldog", "beagle",
+  "maltese", "basset_hound","yorkie", "dachshund", "german_shepherd"];
 //   "schnauzer", "shih tzu", "akita", "cocker spaniel", "st bernard",
 //   "pug", "rottweiler", "english setter", "boxer", 
 //   "german shorthaired pointer", "weimaraner", "border collie",

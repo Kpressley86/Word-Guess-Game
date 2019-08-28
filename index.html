@@ -8,8 +8,7 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <title>Word-Guess-Game</title>
-    <link href="https://fonts.googleapis.com/css?family=Bevan|Roboto|Roboto+Condensed&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Faster+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
 </head>
 
@@ -23,7 +22,17 @@
         <div class="container">
 
             <!--Changing Image based on correct answers-->
-            <h2>START - Press Any Letter Key!</h2>
+            <h2><button class="bone">
+                    <div class="c1"></div>
+                    <div class="c2"></div>
+                    <div class="c3"></div>
+                    <div class="c4"></div>
+                    <div class="b1">
+                      <div class="b2">
+                        Type To Start
+                      </div>
+                    </div>
+                </button></h2>
             <div>
                 <img id="image" src="./assets/images/golden.jpg" width="40%" height="200">
             </div>
@@ -35,7 +44,7 @@
             <div id="scoreboard">
                 <!--Guesses left Container-->
                 <div class="sidebar">
-                    <h3>GUESSES LEFT:
+                    <h3>REMAINING GUESSES:
                         <span id="guessesremaining"></span>
                     </h3>
                 </div>
@@ -55,7 +64,7 @@
 
                 <!--Wrong guesses container-->
                 <div class="sidebar">
-                    <h3>LETTERS YOU GUESSED WRONG:
+                    <h3>WRONG LETTERS GUESSED:
                         <span id="playerguesses"></span>
                     </h3>
                 </div>
@@ -65,15 +74,15 @@
 
 
     <div>
-        
+
         <audio id="correct">
             <source src="./assets/audio/99 - Bark! (SFX).mp3" type="audio/mp3">
         </audio>
-        
+
         <audio id="wrong">
             <source src="./assets/audio/99 - Laugh (SFX).mp3" type="audio/mp3">
         </audio>
-        
+
     </div>
 
 
