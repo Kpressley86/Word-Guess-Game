@@ -286,7 +286,7 @@ function reset() {
 }
 
 
-// Functin for checking guess //
+// Cchecking guess //
 
 
 function checkLetters(letter) {
@@ -315,7 +315,7 @@ function checkLetters(letter) {
 }
 
 
-// WIN or LOSE funtion //
+// WIN or LOSE //
 
 
 function complete() {
@@ -324,7 +324,7 @@ function complete() {
     // WIN //
     if (lettersOfWord.toString() == fillEmpty.toString()) {
         wins++;
-        aud("#correct")
+        aud("correct")
         reset()
 
         document.getElementById("winstracker").innerHTML = " " + wins;
@@ -332,7 +332,7 @@ function complete() {
         // LOSE //
     } else if (numberOfGuesses === 0) {
         losses++;
-        aud("#wrong")
+        aud("wrong")
         reset()
         document.getElementById("image").src = "./assets/images/duckHunt.gif"
         document.getElementById("losstracker").innerHTML = " " + losses;
@@ -343,7 +343,7 @@ function complete() {
 }
 
 
-// Start game funtion //
+// Game keyup funtion //
 
 Game()
 
