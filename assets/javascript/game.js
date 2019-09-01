@@ -10,16 +10,16 @@ let puppyArray = ["golden_retriever", "poodle", "chihuahua", "bulldog", "beagle"
     "boston_terrier", "pomeranian", "havanese", "english_mastiff", "labrador_retriever"];
 
 
-// ALL VARRIABLES //
+// VARRIABLES //
 
 let randomPuppy = "";
 let lettersOfWord = []
-let blanks = 0;
-let blanksAndCorrect = [];
+let empty = 0;
+let fillEmpty = [];
 let wrongGuess = [];
 let wins = 0;
 let losses = 0;
-let guessesRemaining = 10;
+let numberOfGuesses = 10;
 
 //GAME START FUNCTION
 
@@ -29,22 +29,22 @@ function Game() {
 
     lettersOfWord = randomPuppy.split("");
 
-    blanks = lettersOfWord.length;
+    empty = lettersOfWord.length;
 
-    // loop for "_" spaces //
-    for (var i = 0; i < blanks; i++) {
-        blanksAndCorrect.push("_");
+    // loop for empty spaces //
+    for (var i = 0; i < empty; i++) {
+        fillEmpty.push("_");
     }
 
     //showing the "_" within HTML //
-    document.getElementById("currentword").innerHTML = "  " + blanksAndCorrect.join("  ");
+    document.getElementById("currentword").innerHTML = "  " + fillEmpty.join("  ");
 
     // console loggs //
     console.log(puppyArray)
     console.log(randomPuppy)
     console.log(lettersOfWord)
-    console.log(blanks)
-    console.log(blanksAndCorrect)
+    console.log(empty)
+    console.log(fillEmpty)
 }
 
 
@@ -279,9 +279,9 @@ function aud() {
 // RESET //
 
 function reset() {
-    guessesRemaining = 10;
+    numberOfGuesses = 10;
     wrongGuess = [];
-    blanksAndCorrect = [];
+    fillEmpty = [];
     Game();
 }
 
@@ -292,7 +292,7 @@ function reset() {
 function checkLetters(letter) {
     var letters = false;
 
-    for (var i = 0; i < blanks; i++) {
+    for (var i = 0; i < empty; i++) {
         if (randomPuppy[i] == letter) {
             letters = true;
         }
@@ -300,18 +300,18 @@ function checkLetters(letter) {
 
     if (letters) {
 
-        for (var i = 0; i < blanks; i++) {
+        for (var i = 0; i < empty; i++) {
             if (randomPuppy[i] == letter) {
-                blanksAndCorrect[i] = letter;
+                fillEmpty[i] = letter;
             }
         }
     }
 
     else {
         wrongGuess.push(letter);
-        guessesRemaining--;
+        numberOfGuesses--;
     }
-    console.log(blanksAndCorrect);
+    console.log(fillEmpty);
 }
 
 
@@ -319,10 +319,10 @@ function checkLetters(letter) {
 
 
 function complete() {
-    console.log("wins:" + wins + "| losses:" + losses + "| guesses left:" + guessesRemaining)
+    console.log("wins:" + wins + "| losses:" + losses + "| guesses left:" + numberOfGuesses)
 
     // WIN //
-    if (lettersOfWord.toString() == blanksAndCorrect.toString()) {
+    if (lettersOfWord.toString() == fillEmpty.toString()) {
         wins++;
         aud("#correct")
         reset()
@@ -330,7 +330,7 @@ function complete() {
         document.getElementById("winstracker").innerHTML = " " + wins;
 
         // LOSE //
-    } else if (guessesRemaining === 0) {
+    } else if (numberOfGuesses === 0) {
         losses++;
         aud("#wrong")
         reset()
@@ -338,8 +338,8 @@ function complete() {
         document.getElementById("losstracker").innerHTML = " " + losses;
     }
 
-    document.getElementById("currentword").innerHTML = "  " + blanksAndCorrect.join(" ");
-    document.getElementById("guessesremaining").innerHTML = " " + guessesRemaining;
+    document.getElementById("currentword").innerHTML = "  " + fillEmpty.join(" ");
+    document.getElementById("numberOfGuesses").innerHTML = " " + numberOfGuesses;
 }
 
 
