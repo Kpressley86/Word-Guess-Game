@@ -1,13 +1,13 @@
 // Array of dog names //
 
 let puppyArray = ["golden_retriever", "poodle", "chihuahua", "bulldog", "beagle",
-    "maltese", "basset_hound", "yorkie", "dachshund", "german_shepherd"];
-//   "schnauzer", "shih tzu", "akita", "cocker spaniel", "st bernard",
-//   "pug", "rottweiler", "english setter", "boxer", 
-//   "german shorthaired pointer", "weimaraner", "border collie",
-//   "shetland sheepdog", "dobermann", "chesapeake bay retriever", "bernese mountain",
-//   "great dane", "rhodesian ridgeback", "siberian husky", "australian shepherd", "corgi",
-//   "boston terrier", "pomeranian", "havanese", "english mastiff", "labrador retriever"
+    "maltese", "basset_hound", "yorkie", "dachshund", "german_shepherd",
+    "schnauzer", "shih_tzu", "akita", "cocker_spaniel", "st_bernard",
+    "pug", "rottweiler", "english_setter", "boxer",
+    "german_shorthaired_pointer", "weimaraner", "border_collie",
+    "shetland_sheepdog", "dobermann", "chesapeake_retriever", "bernese_mountain",
+    "great_dane", "rhodesian_ridgeback", "siberian_husky", "australian_shepherd", "corgi",
+    "boston_terrier", "pomeranian", "havanese", "english_mastiff", "labrador_retriever"];
 
 
 // ALL VARRIABLES //
@@ -48,10 +48,9 @@ function Game() {
 }
 
 
-//AUDIO FUNCTION
+// AUDIO ??? ///
 
-
-//variables for audio function
+// variables for audio function //
 let correctG = document.getElementById("correct");
 let wrongG = document.getElementById("wrong");
 
@@ -117,6 +116,162 @@ function aud() {
     else if (randomPuppy === puppyArray[9]) {
 
         document.getElementById("image").src = "./assets/images/germ-shep.jpg";
+    }
+    // schnauzer //
+
+    else if (randomPuppy === puppyArray[10]) {
+
+        document.getElementById("image").src = "./assets/images/min-schnauzer.jpg";
+    }
+     // shih_tzu //
+
+     else if (randomPuppy === puppyArray[11]) {
+
+        document.getElementById("image").src = "./assets/images/shih-tzu.jpg";
+    }
+     // akita //
+
+     else if (randomPuppy === puppyArray[12]) {
+
+        document.getElementById("image").src = "./assets/images/akita.jpg";
+    }
+     // cocker_spaniel //
+
+     else if (randomPuppy === puppyArray[13]) {
+
+        document.getElementById("image").src = "./assets/images/cock-span.jpg";
+    }
+     // st_bernard //
+
+     else if (randomPuppy === puppyArray[14]) {
+
+        document.getElementById("image").src = "./assets/images/eng-setter.jpg";
+    }
+     // pug //
+
+     else if (randomPuppy === puppyArray[15]) {
+
+        document.getElementById("image").src = "./assets/images/pug.jpg";
+    }
+     // rottweiler //
+
+     else if (randomPuppy === puppyArray[16]) {
+
+        document.getElementById("image").src = "./assets/images/rottweiler.jpg";
+    }
+     // english_setter //
+
+     else if (randomPuppy === puppyArray[17]) {
+
+        document.getElementById("image").src = "./assets/images/eng-setter.jpg";
+    }
+     //  boxer //
+
+     else if (randomPuppy === puppyArray[18]) {
+
+        document.getElementById("image").src = "./assets/images/boxer.jpg";
+    }
+     // german_shorthaired_pointer //
+
+     else if (randomPuppy === puppyArray[19]) {
+
+        document.getElementById("image").src = "./assets/images/germ-shep.jpg";
+    }
+     //  weimaraner //
+
+     else if (randomPuppy === puppyArray[20]) {
+
+        document.getElementById("image").src = "./assets/images/weimaraner.jpg";
+    }
+    //  border_collie //
+
+    else if (randomPuppy === puppyArray[21]) {
+
+        document.getElementById("image").src = "./assets/images/border-collie.jpg";
+    }
+    //  shetland_sheepdog //
+
+    else if (randomPuppy === puppyArray[22]) {
+
+        document.getElementById("image").src = "./assets/images/shetland.jpg";
+    }
+    //  dobermann //
+
+    else if (randomPuppy === puppyArray[23]) {
+
+        document.getElementById("image").src = "./assets/images/doberman.jpg";
+    }
+    //  chesapeake_retriever //
+
+    else if (randomPuppy === puppyArray[24]) {
+
+        document.getElementById("image").src = "./assets/images/chesapeake_bay_retriever.png";
+    }
+    //  bernese_mountain //
+
+    else if (randomPuppy === puppyArray[25]) {
+
+        document.getElementById("image").src = "./assets/images/bernese-mountain-dog.jpg";
+    }
+    //  great_dane //
+
+    else if (randomPuppy === puppyArray[26]) {
+
+        document.getElementById("image").src = "./assets/images/great-dane.jpg";
+    }
+    //  rhodesian_ridgeback //
+
+    else if (randomPuppy === puppyArray[27]) {
+
+        document.getElementById("image").src = "./assets/images/rhodesian-ridgeback.jpg";
+    }
+    //  siberian_husky //
+
+    else if (randomPuppy === puppyArray[28]) {
+
+        document.getElementById("image").src = "./assets/images/siberian-husky.jpg";
+    }
+    //  australian_shepherd //
+
+    else if (randomPuppy === puppyArray[29]) {
+
+        document.getElementById("image").src = "./assets/images/australian-shepherd.jpg";
+    }
+    //  corgi //
+
+    else if (randomPuppy === puppyArray[30]) {
+
+        document.getElementById("image").src = "./assets/images/corgi.jpg";
+    }
+    //  boston_terrier //
+
+    else if (randomPuppy === puppyArray[31]) {
+
+        document.getElementById("image").src = "./assets/images/boston-terrier.jpg";
+    }
+    //  pomeranian //
+
+    else if (randomPuppy === puppyArray[32]) {
+
+        document.getElementById("image").src = "./assets/images/pomeranian.jpg";
+    }
+    //  havanese //
+
+    else if (randomPuppy === puppyArray[33]) {
+
+        document.getElementById("image").src = "./assets/images/havanese.jpg";
+    }
+    //  english_mastiff //
+
+    else if (randomPuppy === puppyArray[34]) {
+
+        document.getElementById("image").src = "./assets/images/english-mastiff.jpg";
+    }
+    //  labrador_retriever //
+
+    else if (randomPuppy === puppyArray[35]) {
+
+        document.getElementById("image").src = "./assets/images/lab-retriever-puppy.jpg";
     }
 };
 
