@@ -337,7 +337,7 @@ function complete() {
     }
 
     document.getElementById("currentword").innerHTML = "  " + fillEmpty.join(" ");
-    document.getElementById("playerguesses").innerHTML = " " + numberOfGuesses;
+    document.getElementById("guessesremaining").innerHTML = " " + numberOfGuesses;
 }
 
 
