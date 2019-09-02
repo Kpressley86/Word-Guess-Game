@@ -54,8 +54,6 @@ function Game() {
 let correctG = document.getElementById("correct");
 let wrongG = document.getElementById("wrong");
 
-
-
 function aud() {
     // goldenRetriever //
 
@@ -319,7 +317,7 @@ function checkLetters(letter) {
 
 
 function complete() {
-    console.log("wins:" + wins + "| losses:" + losses + "| guesses left:" + numberOfGuesses)
+    console.log("wins:" + wins + "| losses:" + losses + "| remaining guesses:" + numberOfGuesses)
 
     // WIN //
     if (lettersOfWord.toString() == fillEmpty.toString()) {
@@ -339,7 +337,7 @@ function complete() {
     }
 
     document.getElementById("currentword").innerHTML = "  " + fillEmpty.join(" ");
-    document.getElementById("numberOfGuesses").innerHTML = " " + numberOfGuesses;
+    document.getElementById("playerguesses").innerHTML = " " + numberOfGuesses;
 }
 
 
