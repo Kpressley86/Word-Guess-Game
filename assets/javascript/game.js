@@ -51,8 +51,8 @@ function Game() {
 // AUDIO ??? ///
 
 // variables for audio function //
-let correctG = document.getElementById("correct");
-let wrongG = document.getElementById("wrong");
+let correctG = new Audio("./assets/audio/99 - Bark! (SFX).mp3");
+let wrongG = new Audio("./assets/audio/99 - Laugh (SFX).mp3");
 
 function aud() {
     // goldenRetriever //

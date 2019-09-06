@@ -93,8 +93,9 @@ footer {
 }
 
 .background {
-  margin-top: 175px;
-  margin-bottom: 200px;
+  margin-left: 200px;
+  margin-top: 50px;
+  margin-bottom: 225px;
 }
 
 h1 {
@@ -111,7 +112,7 @@ h2 {
 }
 
 h3 {
-  color: #000
+  color: rgb(0, 0, 0)
 }
 
 img {
